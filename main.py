@@ -45,8 +45,7 @@ keyboard.add_button('next', color=VkKeyboardColor.PRIMARY)
 
 
 def find_memes():
-    # The following four-five lines are my first ever copy/paste from stackoverflow
-    # It deletes all previous files (memes) in the folder, keeping it nice and clean
+    # Deletes all previous files (memes) in the folder, keeping it nice and clean
     if len(os.listdir(memes_directory_path)):
         for file in os.listdir(memes_directory_path):
             file_path = os.path.join(memes_directory_path, file)
